@@ -1,0 +1,5 @@
+export enum PALLETES_SIZES{
+    SMALL=80,
+    MEDIUM=220,
+    LARGE=450
+}
