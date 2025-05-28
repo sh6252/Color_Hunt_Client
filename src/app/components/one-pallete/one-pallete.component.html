@@ -1,7 +1,6 @@
 <div [style]="{height:getPXSize(),width:getPXSize(),margin:'2px'}">
     <div *ngFor="let color of pallete()?.colors; let i=index;
-    let first=first; let last=last" 
-    [style.backgroundColor]="getBGColorString(color)" 
-    [style.height]="i==0?'40%':i==1?'28%':i==2?'20%':'12%'"
-    [style.borderRadius]="first?'8px 8px 0 0' : last? '0 0 8px 8px':'0 0 0 0'"></div>
+    let first=first; let last=last" [style.backgroundColor]="getBGColorString(color)"
+        [style.height]="i==0?'40%':i==1?'28%':i==2?'20%':'12%'"
+        [style.borderRadius]="first?'8px 8px 0 0' : last? '0 0 8px 8px':'0 0 0 0'"></div>
 </div>
