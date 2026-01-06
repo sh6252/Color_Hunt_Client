@@ -1,59 +1,106 @@
-# ColorHuntClient
+# 🎨 Color Hunt Client
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.8.
+> אפליקציית Angular מודרנית לחיפוש, יצירה ושיתוף פלטות צבעים יפות
 
-## Development server
+## 📖 תיאור הפרויקט
 
-To start a local development server, run:
+Color Hunt Client היא אפליקציית Angular המאפשרת למשתמשים לגלות, ליצור ולנהל פלטות צבעים מדהימות. האפליקציה מספקת חוויית משתמש אינטואיטיבית ומודרנית לעבודה עם צבעים.
 
+## ✨ תכונות עיקריות
+
+- 🏠 **דף בית** - גלה פלטות צבעים פופולריות
+- 🎨 **יצירת פלטות** - צור פלטות צבעים מותאמות אישית
+- 👤 **ניהול משתמשים** - הרשמה, התחברות וניהול פרופיל
+- 📚 **האוסף שלי** - שמור ונהל את הפלטות המועדפות עליך
+- 🔍 **חיפוש מתקדם** - מצא פלטות לפי צבעים או תגיות
+- 📱 **עיצוב רספונסיבי** - חוויה מושלמת בכל המכשירים
+
+## 🛠️ טכנולוgiות
+
+- **Angular 19.2** - פריימוורק המובילה לפיתוח אפליקציות
+- **TypeScript** - שפת תכנות מתקדמת עם טיפוסים
+- **RxJS** - ניהול אסינכרוני ותגובתי
+- **Angular Router** - ניווט בין דפים
+- **Angular Forms** - ניהול טפסים מתקדם
+
+## 📁 מבנה הפרויקט
+
+```
+src/
+├── app/
+│   ├── components/          # רכיבים משותפים
+│   │   ├── header/         # כותרת האתר
+│   │   └── one-pallete/    # תצוגת פלטה בודדת
+│   ├── pages/              # דפי האפליקציה
+│   │   ├── home/           # דף הבית
+│   │   ├── create-pallete/ # יצירת פלטה
+│   │   ├── login/          # התחברות
+│   │   ├── signup/         # הרשמה
+│   │   ├── my-collection/  # האוסף האישי
+│   │   └── not-found/      # דף 404
+│   ├── services/           # שירותים
+│   └── modules/            # מודולים
+```
+
+## 🚀 התחלה מהירה
+
+### דרישות מערכת
+
+- Node.js (גרסה 18 ומעלה)
+- npm או yarn
+- Angular CLI
+
+### התקנה
+
+1. שכפל את הפרויקט:
+```bash
+git clone <repository-url>
+cd color-hunt-client
+```
+
+2. התקן תלויות:
+```bash
+npm install
+```
+
+3. הפעל שרת פיתוח:
 ```bash
 ng serve
+# או
+npm start
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+4. פתח דפדפן וגש לכתובת: `http://localhost:4200`
 
-## Code scaffolding
+## 📜 פקודות זמינות
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+| פקודה | תיאור |
+|--------|--------|
+| `ng serve` | הפעלת שרת פיתוח |
+| `ng build` | בניית הפרויקט לפרודקשן |
+| `ng test` | הרצת בדיקות יחידה |
+| `ng generate component <name>` | יצירת רכיב חדש |
+| `ng generate service <name>` | יצירת שירות חדש |
 
-```bash
-ng generate component component-name
-```
+## 🧪 בדיקות
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
+### בדיקות יחידה
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
+### בדיקות E2E
 ```bash
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 🏗️ בנייה לפרודקשן
 
-## Additional Resources
+```bash
+ng build --configuration production
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+קבצי הבנייה יישמרו בתיקיית `dist/`.
+
+
+**נבנה עם ❤️ באמצעות Angular**
