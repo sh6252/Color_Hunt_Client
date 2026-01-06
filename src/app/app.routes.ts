@@ -9,10 +9,14 @@ import { SignInComponent } from './pages/sign-in/sign-in.component';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
 
 export const routes: Routes = [
-    { path: 'login', component: LoginComponent ,children:[
-        {path:'sign-in',component:SignInComponent},
-        {path:'sign-up',component:SignUpComponent}
-    ]},
+    {
+        path: 'login', component: LoginComponent, children: [
+
+            { path: '', component: SignInComponent },
+            { path: 'sign-in', component: SignInComponent },
+            { path: 'sign-up', component: SignUpComponent }
+        ]
+    },
     {
         path: '', component: MainComponent, children: [
             { path: '', component: HomeComponent },
